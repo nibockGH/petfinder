@@ -1,5 +1,17 @@
 {
+    "name": "nibockGH/petfinder",
+    "description": "PetFinder Project",
     "require": {
         "phpmailer/phpmailer": "^6.9"
+    },
+    "scripts": {
+        "build": "php build.php",
+        "post-update-cmd": [
+            "@build"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
     }
 }
